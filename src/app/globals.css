@@ -1,0 +1,58 @@
+/*CSS styles*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/*CSS styles for the mode button*/
+.mode{
+  width: 8vw;
+  height: 8vh;
+  border-radius: 1em;
+  background-color: blue;
+  margin-top: 1vw;
+  background-image: url('/images/night.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  border-color: rgb(213, 59, 224) ;
+  border-width: 0.4vw;
+  position: absolute;
+  right: 5vw;
+  top: 3vw;
+  cursor: pointer;
+}
+
+/*Border animation for th mode button*/
+@keyframes writing_space {
+  0%   {border-color: rgb(22, 20, 152);}
+  25%  {border-color: rgb(226, 43, 208)}
+  50%  {border-color: rgb(167, 59, 207);}
+  100% {border-color: rgb(18, 87, 128);}
+  }
+
+/*CSS styles for the mode button when hovered on*/
+.mode:hover {
+  animation: writing_space 3s infinite;
+}
+
