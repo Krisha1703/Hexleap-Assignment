@@ -1,4 +1,4 @@
-### Sports-Tickets
+# Sports-Tickets
 
 ## Link to the Figma design
 https://www.figma.com/design/X2QS1Vmlmj94sAxnKTGEYQ/SportsTickets?node-id=0-1&t=NEpu1laY9zprxOzD-0
